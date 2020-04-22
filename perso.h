@@ -7,7 +7,14 @@
 
 
 class Perso {
+public:
+    int x, y;  //Les variables qui définissent la position du personnage
 
+    //Initialisation de la position de notre personnage
+    Perso(int width) {
+        x = width / 2;
+        y = 0;
+    }
 };
 
 
