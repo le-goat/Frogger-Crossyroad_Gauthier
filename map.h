@@ -6,9 +6,9 @@
 #define PROJETC_MAP_H
 
 
-class map {
-pr
-};
+//class map {
+//pr
+//};
 
 
 #endif //PROJETC_MAP_H
