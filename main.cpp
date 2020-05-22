@@ -6,6 +6,7 @@
 #include <vector>
 #include "perso.h"
 #include "map.h"
+#include "obstacle.h"
 #include "fonctionnement.h"
 #include "SFML/Graphics.hpp"
 

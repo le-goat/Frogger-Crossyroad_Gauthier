@@ -5,9 +5,16 @@
 #ifndef PROJETC_OBSTACLE_H
 #define PROJETC_OBSTACLE_H
 
+#include <iostream>
+#include "ligne.h"
 
-class obstacle {
+class Obstacle {
+protected:
+    int width;
+    int speed;
 
+public:
+    Obstacle(int width, int speed);
 };
 
 

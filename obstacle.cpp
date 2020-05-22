@@ -3,3 +3,7 @@
 //
 
 #include "obstacle.h"
+
+Obstacle::Obstacle(int width, int speed) {
+
+}

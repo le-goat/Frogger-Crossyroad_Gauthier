@@ -3,3 +3,12 @@
 //
 
 #include "map.h"
+#include "ligne.h"
+
+Map::Map(int width, int height) {
+    for (int i = 0; i < height; i++){
+        //random type of lane
+        int type = rand() % 4
+        lanes.push_front(Ligne(type));
+    }
+}
