@@ -10,10 +10,19 @@
 class Ligne {
 protected:
     int type;
-    std::deque<bool> lane;
+    std::deque<Obstacle> lane;
 
 public:
-    Ligne(int type);
+//    Ligne(int type);
+    Ligne(Type type);
+
+    enum Type {
+        VIDE,
+        STATIQUE,
+        VOITURE,
+        CAMION,
+        RIVIERE
+    };
 };
 
 
