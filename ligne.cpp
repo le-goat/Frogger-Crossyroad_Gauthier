@@ -5,14 +5,16 @@
 
 #include "ligne.h"
 #include <deque>
+#include "obstacle.h"
 
-Ligne::Ligne(Type type) {
+Ligne::Ligne(Type type, int x) {
 
     //créer un tableau d'obstacles
     switch (type) {
         case VIDE:
             break;
         case STATIQUE:
+            Ligne mon_obstacle (Obstacle(1, 0));
             //le remplit avec des obstacles statiques
             //..
             break;

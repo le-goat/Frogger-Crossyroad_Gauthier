@@ -9,7 +9,9 @@
 Map::Map(int width, int height) {
     for (int i = 0; i < height; i++){
         //random type of lane
-        int type = rand() % 4;
-        lanes.push_front(Ligne(type));
+//        int type = rand() % 4;
+        Map lane(Ligne::Type::VIDE, width);
+//        lanes.insert(i, lane);
+//        lanes.push_front(lane);
     }
 }

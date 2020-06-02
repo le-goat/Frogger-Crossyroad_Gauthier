@@ -10,11 +10,12 @@
 class Ligne {
 protected:
     int type;
+    int x;
     std::deque<Obstacle> lane;
 
 public:
 //    Ligne(int type);
-    Ligne(Type type);
+    Ligne(Type type, int x);
 
     enum Type {
         VIDE,

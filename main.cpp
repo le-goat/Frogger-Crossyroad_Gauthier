@@ -12,6 +12,8 @@
 
 int main() {
 
+//    std::cout << Map << std::endl;
+
     const int WIDTH = 500;
     const int HEIGHT = 800;
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "Chemin tortueux");
@@ -23,6 +25,19 @@ int main() {
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed) {
                 window.close();
+            } else if (event.type == sf::Event::KeyPressed) {
+                if (event.key.code == sf::Keyboard::D || event.key.code == sf::Keyboard::Right) {
+                    //Fonction perso associée
+                }
+                if (event.key.code == sf::Keyboard::Q || event.key.code == sf::Keyboard::Left) {
+                    //Fonction perso associée
+                }
+                if (event.key.code == sf::Keyboard::S || event.key.code == sf::Keyboard::Down) {
+                    //Fonction perso associée
+                }
+                if (event.key.code == sf::Keyboard::Z || event.key.code == sf::Keyboard::Up) {
+                    //Fonction perso associée
+                }
             }
         }
     }
