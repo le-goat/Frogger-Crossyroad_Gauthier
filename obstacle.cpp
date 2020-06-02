@@ -4,6 +4,6 @@
 
 #include "obstacle.h"
 
-Obstacle::Obstacle(int width, int speed) {
+Obstacle::Obstacle(int width, int x, int y) {
 
 }

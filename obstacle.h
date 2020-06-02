@@ -11,10 +11,11 @@
 class Obstacle {
 protected:
     int width;
-    int speed;
+    int x;
+    int y;
 
 public:
-    Obstacle(int width, int speed);
+    Obstacle(int width, int x, int y);
 };
 
 

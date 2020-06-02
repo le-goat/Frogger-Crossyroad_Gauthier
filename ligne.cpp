@@ -14,13 +14,16 @@ Ligne::Ligne(Type type, int x) {
         case VIDE:
             break;
         case STATIQUE:
+            this->speed = 0;
 //            Ligne mon_obstacle (Obstacle(1, 0));
             //le remplit avec des obstacles statiques
             //..
             break;
         case VOITURE:
+            this->speed = 2;
             break;
         case CAMION:
+            this->speed = 1;
             break;
         case RIVIERE:
             break;

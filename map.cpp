@@ -10,7 +10,7 @@ Map::Map(int width, int height) {
     for (int i = 0; i < height; i++){
         //random type of lane
 //        int type = rand() % 4;
-        Ligne lane(Ligne::Type::VIDE, width);
+        Ligne lane(Ligne::Type::VIDE, i);
         lanes.push_front(lane);
     }
 }

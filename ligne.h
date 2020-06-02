@@ -18,8 +18,9 @@ public:
     };
 
 protected:
-    int type;
+    int speed;
     int x;
+
     std::deque<Obstacle> lane;
 
 public:
