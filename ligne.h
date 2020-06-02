@@ -8,15 +8,7 @@
 #include "obstacle.h"
 
 class Ligne {
-protected:
-    int type;
-    int x;
-    std::deque<Obstacle> lane;
-
 public:
-//    Ligne(int type);
-    Ligne(Type type, int x);
-
     enum Type {
         VIDE,
         STATIQUE,
@@ -24,6 +16,15 @@ public:
         CAMION,
         RIVIERE
     };
+
+protected:
+    int type;
+    int x;
+    std::deque<Obstacle> lane;
+
+public:
+    Ligne(Type type, int x);
+
 };
 
 

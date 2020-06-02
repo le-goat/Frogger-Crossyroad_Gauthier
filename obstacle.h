@@ -6,7 +6,7 @@
 #define PROJETC_OBSTACLE_H
 
 #include <iostream>
-#include "ligne.h"
+
 
 class Obstacle {
 protected:

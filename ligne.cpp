@@ -14,7 +14,7 @@ Ligne::Ligne(Type type, int x) {
         case VIDE:
             break;
         case STATIQUE:
-            Ligne mon_obstacle (Obstacle(1, 0));
+//            Ligne mon_obstacle (Obstacle(1, 0));
             //le remplit avec des obstacles statiques
             //..
             break;

@@ -28,15 +28,19 @@ int main() {
             } else if (event.type == sf::Event::KeyPressed) {
                 if (event.key.code == sf::Keyboard::D || event.key.code == sf::Keyboard::Right) {
                     //Fonction perso associée
+                    std::cout << "La droite" << std::endl;
                 }
                 if (event.key.code == sf::Keyboard::Q || event.key.code == sf::Keyboard::Left) {
                     //Fonction perso associée
+                    std::cout << "La gauche" << std::endl;
                 }
                 if (event.key.code == sf::Keyboard::S || event.key.code == sf::Keyboard::Down) {
                     //Fonction perso associée
+                    std::cout << "Le bas" << std::endl;
                 }
-                if (event.key.code == sf::Keyboard::Z || event.key.code == sf::Keyboard::Up) {
+                if (event.key.code == sf::Keyboard::Z || event.key.code == sf::Keyboard::Up || event.key.code == sf::Keyboard::Space) {
                     //Fonction perso associée
+                    std::cout << "Le haut" << std::endl;
                 }
             }
         }
