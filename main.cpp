@@ -12,8 +12,6 @@
 
 int main() {
 
-//    std::cout << Map << std::endl;
-
     const int height = 20;
     const int width = 10;
     const int WIDTH = 500;
@@ -21,15 +19,12 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "Chemin tortueux");
     window.setVerticalSyncEnabled(true);
 
-    Map nouvelle_map(width, height);
+    Map nouvelle_map(width, height);// création de la map de jeu
 
 
     while(window.isOpen()) {
-//        for (int l = 0; l < height; l++) {
-//            Map::getLanes()
-//            //Map::getLanes()
-//        }
 
+        // gestion des events
         sf::Event event{};
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed) {
