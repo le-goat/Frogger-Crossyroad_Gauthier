@@ -7,26 +7,32 @@
 #include <deque>
 #include "obstacle.h"
 
-Ligne::Ligne(Type type, int x) {
+Ligne::Ligne(Type type, int x, int y) {
 
     //créer un tableau d'obstacles
     switch (type) {
         case VIDE:
             break;
-        case STATIQUE:
+        case STATIQUE: {
             this->speed = 0;
-//            Ligne mon_obstacle (Obstacle(1, 0));
+            Obstacle arbre(Obstacle(1, 0, y));
             //le remplit avec des obstacles statiques
             //..
-            break;
-        case VOITURE:
+        }break;
+        case VOITURE: {
             this->speed = 2;
-            break;
-        case CAMION:
+            Obstacle voiture(Obstacle(2, 0, y));
+        }break;
+        case CAMION: {
             this->speed = 1;
-            break;
-        case RIVIERE:
-            break;
+            Obstacle camion(Obstacle(3, 0, y));
+        }break;
+        case RIVIERE:{
+            int randspeed = 0;
+            int randwidth = 0;
+            this->speed = randspeed;
+            Obstacle eau(Obstacle(randwidth, 0, y));
+        }break;
     }
 //    if (int type = 0) { // 0 est équivalent à une ligne sans obstacles
 //        Obstacle ob{0, 0};

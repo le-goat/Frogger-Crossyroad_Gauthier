@@ -20,11 +20,12 @@ public:
 protected:
     int speed;
     int x;
+    int y;
 
     std::deque<Obstacle> lane;
 
 public:
-    Ligne(Type type, int x);
+    Ligne(Type type, int x, int y);
 
 };
 
