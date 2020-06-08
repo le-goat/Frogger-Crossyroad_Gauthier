@@ -13,6 +13,7 @@ protected:
     int width;
     int height;
     std::deque<Ligne> lanes;
+
 public:
     [[nodiscard]] const std::deque<Ligne> &getLanes() const;
 

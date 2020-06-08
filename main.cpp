@@ -7,7 +7,7 @@
 #include "perso.h"
 #include "map.h"
 #include "obstacle.h"
-#include "affichage.h"
+#include "logique.h"
 #include "SFML/Graphics.hpp"
 
 int main() {

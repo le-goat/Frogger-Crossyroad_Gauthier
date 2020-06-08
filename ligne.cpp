@@ -15,23 +15,45 @@ Ligne::Ligne(Type type, int y) {
             break;
         case STATIQUE: {
             this->speed = 0;
-            Obstacle arbre(Obstacle(1, 0, y));
+            int randx = 0;
+            for (int i = 0; i < 5; ++i) {
+                randx = rand() % 9;
+                std::cout << randx;
+                Obstacle arbre(Obstacle(1, randx, y));
+            }
+
             //le remplit avec des obstacles statiques
             //..
         }break;
         case VOITURE: {
             this->speed = 2;
-            Obstacle voiture(Obstacle(2, 0, y));
+            int randx = 0;
+            for (int i = 0; i < 3; ++i) {
+                randx = rand() % 9;
+                std::cout << randx;
+                Obstacle voiture(Obstacle(2, randx, y));
+            }
         }break;
         case CAMION: {
             this->speed = 1;
-            Obstacle camion(Obstacle(3, 0, y));
+            int randx = 0;
+            for (int i = 0; i < 2; ++i) {
+                randx = rand() % 9;
+                std::cout << randx;
+                Obstacle camion(Obstacle(3, randx, y));
+            }
         }break;
         case RIVIERE:{
             int randspeed = 0;
             int randwidth = 0;
             this->speed = randspeed;
-            Obstacle eau(Obstacle(randwidth, 0, y));
+            int randx = 0;
+            for (int i = 0; i < 5; ++i) {
+                randx = rand() % 9;
+                std::cout << randx;
+                randwidth = rand() % 2;
+                Obstacle eau(Obstacle(randwidth, randx, y));
+            }
         }break;
     }
 //    if (int type = 0) { // 0 est équivalent à une ligne sans obstacles
