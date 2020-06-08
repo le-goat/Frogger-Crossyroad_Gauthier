@@ -7,7 +7,7 @@
 #include <deque>
 #include "obstacle.h"
 
-Ligne::Ligne(Type type, int x, int y) {
+Ligne::Ligne(Type type, int y) {
 
     //créer un tableau d'obstacles
     switch (type) {

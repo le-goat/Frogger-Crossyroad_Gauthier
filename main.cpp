@@ -19,8 +19,12 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "Chemin tortueux");
     window.setVerticalSyncEnabled(true);
 
+    Map nouvelle_map(10, 20);
 
     while(window.isOpen()) {
+    //    for ();
+
+
         sf::Event event{};
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed) {
@@ -45,6 +49,7 @@ int main() {
             }
         }
     }
+
     std::cout << "The window is closed" << std::endl;
 
     return 0;

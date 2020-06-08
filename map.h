@@ -13,6 +13,7 @@ protected:
     int width;
     int height;
     std::deque<Ligne> lanes;
+    int last_line_type = 0;
 
 public:
     Map(int width, int height);
