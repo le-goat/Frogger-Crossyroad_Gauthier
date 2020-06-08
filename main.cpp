@@ -7,23 +7,28 @@
 #include "perso.h"
 #include "map.h"
 #include "obstacle.h"
-#include "fonctionnement.h"
+#include "affichage.h"
 #include "SFML/Graphics.hpp"
 
 int main() {
 
 //    std::cout << Map << std::endl;
 
+    const int height = 20;
+    const int width = 10;
     const int WIDTH = 500;
     const int HEIGHT = 800;
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "Chemin tortueux");
     window.setVerticalSyncEnabled(true);
 
-    Map nouvelle_map(10, 20);
+    Map nouvelle_map(width, height);
+
 
     while(window.isOpen()) {
-    //    for ();
-
+//        for (int l = 0; l < height; l++) {
+//            Map::getLanes()
+//            //Map::getLanes()
+//        }
 
         sf::Event event{};
         while (window.pollEvent(event)) {
@@ -48,6 +53,9 @@ int main() {
                 }
             }
         }
+
+
+        window.draw(nouvelle_map);
     }
 
     std::cout << "The window is closed" << std::endl;
