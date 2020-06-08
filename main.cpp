@@ -54,8 +54,34 @@ int main() {
             }
         }
 
+        sf::RectangleShape ligne(sf::Vector2f(500, 40));
+        ligne.setPosition(0, 40);
+        ligne.setFillColor(sf::Color(20, 20, 255));
+        window.draw(ligne);
+
+        sf::Texture texture;
+        if (!texture.loadFromFile("../../perso.png")){}
+        sf::Sprite sprite;
+        sprite.setTexture(texture);
+        sprite.setPosition(100, 200);
+        sprite.setScale(0.5, 0.5);
+        window.draw(sprite);
+
+        sf::Font font;
+        if (!font.loadFromFile("../../arial.ttf")){
+            std::cout << "Problème lors du chargement de la police" << std::endl;
+        }
+        sf::Text text;
+        text.setFont(font);
+        text.setString("Score : ");
+        text.setPosition(20, 20);
+        text.setFillColor(sf::Color(255, 20, 20));
+        text.setCharacterSize(24);
+        window.draw(text);
 
         window.draw(nouvelle_map);
+
+        window.display();
     }
 
     std::cout << "The window is closed" << std::endl;

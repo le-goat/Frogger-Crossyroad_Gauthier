@@ -78,10 +78,15 @@ const std::deque<Ligne> &Map::getLanes() const {
 
 void Map::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     //std::deque<Ligne>::iterator It;
-    for (int l = 0; l < lanes.size(); l++) {
+    for (int l = 0; l < 20; l++) {
         //Ligne actual = lanes[l];
         //if ((&lanes[l] == Ligne::Type::VIDE) {
 
         //}
+        //std::cout << "Je suis la" << l << std::endl;
+        //sf::RectangleShape ligne(sf::Vector2f(500, 40)); // Impossibilité d'afficher par ici
+        //ligne.setPosition(100, 40);
+        //ligne.setFillColor(sf::Color(20, 20, 255));
+
     }
 }
